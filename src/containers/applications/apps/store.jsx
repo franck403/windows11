@@ -324,7 +324,7 @@ const DownPage = ({ action, apps }) => {
 
 const DetailPage = ({ app }) => {
   const apps = useSelector((state) => state.apps);
-  console.log(apps)
+  console.log(apps);
   const [dstate, setDown] = useState(0);
   const stars = geneStar(app);
   const reviews = geneStar(app, 1);
