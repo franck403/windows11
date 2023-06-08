@@ -129,9 +129,6 @@ export const MicroStore = () => {
         .catch((err) => {
           console.log(err);
         });
-
-      setFetch(1);
-
       axios
         .get(custom)
         .then((res) => res.data)
@@ -143,6 +140,7 @@ export const MicroStore = () => {
         });
 
       setFetch(1);
+
     }
   }, [hide]);
 
