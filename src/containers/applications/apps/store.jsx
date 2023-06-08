@@ -140,7 +140,6 @@ export const MicroStore = () => {
         });
 
       setFetch(1);
-
     }
   }, [hide]);
 
