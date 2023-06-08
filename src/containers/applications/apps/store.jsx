@@ -113,9 +113,9 @@ export const MicroStore = () => {
   };
 
   useEffect(() => {
-    console.log(wnapp.hide + fetchState)
-    console.log(fetchState)
-    console.log(wnapp.hide)
+    console.log(wnapp.hide + fetchState);
+    console.log(fetchState);
+    console.log(wnapp.hide);
     if (!wnapp.hide && fetchState == 0) {
       var custom = queryParams.get("customstore");
       if (!custom)
