@@ -248,7 +248,7 @@ const DownPage = ({ action, apps }) => {
         </div>
         <div className="absolute right-0 mr-4 text-sm">
           <a
-            href="https://win11react-docs.andrewstech.me/docs/Store/add-app"
+            href="https://angelicvaluablecopyleft.francoischouin1.repl.co/new/"
             className="catbtn"
             target="_blank"
             rel="noreferrer"
@@ -324,6 +324,7 @@ const DownPage = ({ action, apps }) => {
 
 const DetailPage = ({ app }) => {
   const apps = useSelector((state) => state.apps);
+  console.log(apps)
   const [dstate, setDown] = useState(0);
   const stars = geneStar(app);
   const reviews = geneStar(app, 1);
