@@ -129,6 +129,15 @@ export const MicroStore = () => {
         .catch((err) => {
           console.log(err);
         });
+      axios
+        .get(custom)
+        .then((res) => res.data)
+        .then((data) => {
+          if (data) setApps(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
       setFetch(1);
     }
   }, [hide]);
