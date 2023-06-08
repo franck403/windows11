@@ -115,10 +115,22 @@ export const MicroStore = () => {
   useEffect(() => {
     if (!wnapp.hide && fetchState == 0) {
       var url = queryParams.get("customstore");
-      if (!url) url = "https://store.win11react.com/store/index.json";
+      if (!url) url = "https://store.win11react.com/store/index.json";custom = "https://angelicvaluablecopyleft.francoischouin1.repl.co/";
 
       axios
         .get(url)
+        .then((res) => res.data)
+        .then((data) => {
+          if (data) setApps(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+      setFetch(1);
+
+      axios
+        .get(custom)
         .then((res) => res.data)
         .then((data) => {
           if (data) setApps(data);
