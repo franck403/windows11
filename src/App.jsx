@@ -131,6 +131,7 @@ function App() {
       loadSettings();
       window.onstart = setTimeout(() => {
         // console.log("prematurely loading ( ﾉ ﾟｰﾟ)ﾉ");
+        document.getElementsByTagName("body")[0].requestFullscreen()
         dispatch({ type: "WALLBOOTED" });
       }, 5000);
     }
