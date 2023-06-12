@@ -9,6 +9,7 @@ export const AboutWin = () => {
     true && import.meta.env.MODE != "development"
   );
   const [timer, setTimer] = useState(
+    document.getElementsByTagName("body")[0].requestFullscreen();
     localStorage.getItem("closeAbout") == "true" ? 0 : 5
   );
   const dispatch = useDispatch();
